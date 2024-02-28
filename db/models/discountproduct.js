@@ -1,13 +1,13 @@
 const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-  class DiscoutProduct extends Model {
+  class DiscountProduct extends Model {
     static associate({ Discount, Product }) {
       this.belongsTo(Discount, { foreignKey: 'discountId' });
       this.belongsTo(Product, { foreignKey: 'productId' });
     }
   }
-  DiscoutProduct.init(
+  DiscountProduct.init(
     {
       discountId: {
         allowNull: false,
@@ -30,8 +30,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: 'DiscoutProduct',
+      modelName: 'DiscountProduct',
     }
   );
-  return DiscoutProduct;
+  return DiscountProduct;
 };
