@@ -5,7 +5,7 @@ function RegistrationPage({ title }) {
   return (
     <Layout title={title}>
       <h3>Привет,больной друг!!Зарегайся по братски</h3>
-      <form className='sign-up'>
+      <form className='sing-up'>
         <input type='text' name='name' placeholder='name' />
         <input type='email' name='email' placeholder='email' />
         <input type='password' name='password' placeholder='password' />
