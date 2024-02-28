@@ -1,7 +1,8 @@
 // components/Layout.jsx
 const React = require('react');
+const NavBar = require('./NavBar');
 
-module.exports = function Layout({ title, children }) {
+module.exports = function Layout({ title, children, user }) {
   return (
     <html lang='en'>
       <head>
@@ -9,7 +10,10 @@ module.exports = function Layout({ title, children }) {
         {/* <link rel='stylesheet' href='/css/style.css' />
         <script src='/js/script.js' /> */}
       </head>
-      <body>{children}</body>
+      <body>
+        <NavBar user={user} />
+        {children}
+      </body>
     </html>
   );
 };
