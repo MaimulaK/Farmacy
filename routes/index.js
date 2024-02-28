@@ -10,15 +10,15 @@ router.use('/cart', cartViewRouter);
 
 const mainViewRouter = require('./views/main.view.router');
 const authViewRouter = require('./views/auth.view.router');
-// const containerViewRouter = require('./views/container.view.router');
+const containerViewRouter = require('./views/container.view.router');
 
 // api
 const authApiRouter = require('./api/auth.api.router');
 
 // route views
 router.use('/', mainViewRouter);
+router.use('/', containerViewRouter);
 router.use('/auth/', authViewRouter);
-// router.use('/', containerViewRouter);
 
 // route api
 router.use('/api/auth', authApiRouter);

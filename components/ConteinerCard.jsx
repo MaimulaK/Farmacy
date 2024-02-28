@@ -5,9 +5,9 @@ const ProductCard = require('./ProductCard');
 function ConteinerCard({ title, products }) {
   return (
     <Layout title={title}>
-      <div className="container">
+      <div className='container'>
         <h1>Наши товары</h1>
-        <div className="productCard">
+        <div className='productCard'>
           {products.map((product) => (
             <ProductCard product={product} />
           ))}
