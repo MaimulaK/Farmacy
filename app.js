@@ -2,7 +2,7 @@ require('@babel/register');
 const express = require('express');
 const serverConfig = require('./config/serverConfig');
 const indexRouter = require('./routes/index');
-// const path = require('path');
+
 
 const app = express();
 
