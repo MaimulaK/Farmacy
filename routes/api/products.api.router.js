@@ -34,4 +34,20 @@ router.get('/sortDown', async (req, res) => {
   }
 });
 
+router.get('/filterCount', async (req, res) => {
+  try {
+    const filterProduct = await Product.findAll({ order: [['count', 'DESC']] });
+    if (filterProduct) {
+      const html = res.renderComponent(
+        ProductContainer,
+        { products: filterProduct },
+        { doctype: false }
+      );
+      res.status(201).json({ message: 'success', html });
+    }
+  } catch ({ message }) {
+    res.status(500).json({ error: message });
+  }
+});
+
 module.exports = router;
