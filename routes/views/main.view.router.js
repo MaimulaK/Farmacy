@@ -1,9 +1,11 @@
 const router = require('express').Router();
 const MainPage = require('../../components/MainPage');
+const { Product } = require('../../db/models');
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   const { user } = res.locals;
-  res.send(res.renderComponent(MainPage, { title: 'Аптека', user }));
+  const products = await Product.findAll();
+  res.send(res.renderComponent(MainPage, { title: 'Аптека', user, products }));
 });
 
 module.exports = router;

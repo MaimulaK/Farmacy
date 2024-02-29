@@ -3,10 +3,10 @@ const React = require('react');
 function ProductCard({ product }) {
   return (
     <div className="product">
-      <div>{product.title}</div>
+      <h2>{product.title}</h2>
       <img src={product.img} alt="" />
-      <div>{product.price}</div>
-      <div>{product.description}</div>
+      <p>{product.price}</p>
+      <p>{product.description}</p>
       <button>Добавить</button>
     </div>
   );
