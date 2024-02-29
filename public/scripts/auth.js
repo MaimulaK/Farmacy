@@ -1,5 +1,6 @@
 const regForm = document.querySelector('.sing-up');
 const authForm = document.querySelector('.sing-in');
+const { body } = document;
 
 if (regForm) {
   regForm.addEventListener('submit', async (e) => {
@@ -20,7 +21,13 @@ if (regForm) {
       });
       const data = await res.json();
       if (data.message === 'success') {
-        window.location.assign('/');
+        const div = document.createElement('div');
+        div.innerHTML =
+          'Регистрация прошла успешно!Скоро вас переведет на мейн страницу';
+        body.appendChild(div);
+        setTimeout(() => {
+          window.location.assign('/');
+        }, 3000);
         return;
       }
     }
