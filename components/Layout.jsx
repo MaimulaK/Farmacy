@@ -9,6 +9,7 @@ module.exports = function Layout({ title, children, user }) {
         <title>{title}</title>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <script defer src='/scripts/auth.js' />
+        <script defer src='/scripts/product.js' />
       </head>
       <body>
         <NavBar user={user} />
