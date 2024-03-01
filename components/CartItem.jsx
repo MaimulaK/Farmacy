@@ -1,9 +1,9 @@
 const React = require('react');
 
-function CartItem({ item ,CartItem}) {
+function CartItem({ item }) {
   console.log(item);
   return (
-    <div className='cartProduct' data-id={item.Product.id}>
+    <div className='cartProduct'>
       <h2>{item.Product.title}</h2>
       <img src={item.Product.img} />
       <h3>{item.Product.price}</h3>

@@ -17,7 +17,14 @@ function MainPage({ title, user, products }) {
           <a href='#catalog'>Перейти к товарам</a>
         </div>
       </div>
+
       <div id='catalog' className='mainPage'>
+        <div> <form className='form-date'>
+          <input type='date' className='form-data__input' />
+          <button className='form-date__button'>Бесплатный продукт</button>
+        </form>
+        <div className='randomProduct' style={{ display: 'none' }} />
+</div>
         <div className='filtBtn'>
           <div className='btnfiltDiv'>
             <p>Сортировка</p>
@@ -27,6 +34,7 @@ function MainPage({ title, user, products }) {
         </div>
         <h1>Наши товары</h1>
         <div className='container'>
+
           <ProductContainer products={products} />
         </div>
       </div>
