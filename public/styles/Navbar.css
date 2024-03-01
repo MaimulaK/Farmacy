@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.navBar {
+  height: 60px;
+  background-color: rgb(141, 219, 186);
+  border-radius: 0 0 15px 15px;
+}
+
+.divNavbar {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divNavbar a {
+  text-decoration: none;
+  align-self: center;
+}
