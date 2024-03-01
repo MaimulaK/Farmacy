@@ -27,6 +27,9 @@ module.exports = (sequelize, DataTypes) => {
         },
         onDelete: 'CASCADE',
       },
+      count: {
+        type: DataTypes.INTEGER,
+      },
     },
     {
       sequelize,

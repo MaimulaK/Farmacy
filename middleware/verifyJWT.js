@@ -13,6 +13,7 @@ function verifyRefreshToken(req, res, next) {
       user: {
         id: user.id,
         name: user.name,
+        email: user.email,
       },
     });
     // дополняем объект ответа userом

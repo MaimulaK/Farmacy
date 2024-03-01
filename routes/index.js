@@ -16,16 +16,23 @@ const authApiRouter = require('./api/auth.api.router');
 const productsApiRouter = require('./api/products.api.router');
 const personalApiRouter = require('./api/personal.api.roter');
 
+
+const cartApiRouter = require('./api/cart.api.router');
+
+
 // route views
 router.use('/', mainViewRouter);
 router.use('/auth/', authViewRouter);
 router.use('/cart', cartViewRouter);
 router.use('/personal', personalViewRouter);
+
 router.use('/product', productViewRouter);
+
 
 // route api
 router.use('/api/auth', authApiRouter);
 router.use('/api/', productsApiRouter);
 router.use('/api/personal', personalApiRouter);
+router.use('/api/cart', cartApiRouter);
 
 module.exports = router;

@@ -1,22 +1,45 @@
 const router = require('express').Router();
-const { Cart } = require('../../db/models');
-const { CartItem } = require('../../db/models');
-const ProductCard = require('../../components/ProductCard');
+const { where } = require('sequelize');
+const { CartItem, Cart } = require('../../db/models');
+const CartItemJsx = require('../../components/CartItem');
 
 router.post('/', async (req, res) => {
   try {
+    // достали id продкута
     const { id } = req.body;
+    // дотсаем пользователя, который на сайте
     const { user } = res.locals;
-    const cart = await Cart.findOrCreate({ where: user.id });
-    if (cart) {
-      let cartItem = CartItem.findOne({ where: user.id, productId: id });
+    // console.log(user, '--------------------------------------------');
+    // создаем или проверяем корзину
+    // ВАЖНО!!!! findOrCreate возвращает всегда массив
+    const cart = await Cart.findOrCreate({ where: { userId: user.id } });
+    // проверяем, есть ли корзина
+    if (cart[0]) {
+      // елси есть то находим item
+      let cartItem = await CartItem.findOne({
+        where: { cartId: cart[0].id, productId: id },
+      });
       if (cartItem) {
-        const result = cartItem.update({ count: cartItem + 1 }, { cartItem });
+        // если он есть, то обновляем count
+        const result = cartItem.update(
+          { count: cartItem.count + 1 },
+          { where: { id } }
+        );
         if (result) {
+          // если успешно обновили, находим актуальный item
           cartItem = CartItem.findOne({ where: cartItem.id });
-          const html = res.renderComponent(ProductCard, {}, { doctype: false });
-          res.json();
+
+          // и отправляем
+          res.status(201).json({ message: 'success' });
         }
+      } else {
+        // если товар попал в первые в корзину, то создаем его
+        cartItem = await CartItem.create({
+          cartId: cart[0].id,
+          productId: id,
+          count: 1,
+        });
+        res.status(201).json({ message: 'success' });
       }
     }
   } catch ({ message }) {

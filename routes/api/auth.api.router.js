@@ -46,7 +46,7 @@ router.post('/authorization', async (req, res) => {
     const { email, password } = req.body;
     user = await User.findOne({
       where: { email },
-      attributes: ['password', 'email', 'name'],
+      attributes: ['id', 'email', 'name'],
     });
     if (!user) {
       res.json({ message: 'Такого пользователя нет или пароль неверный' });
