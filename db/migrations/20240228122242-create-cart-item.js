@@ -26,11 +26,9 @@ module.exports = {
         },
         onDelete: 'CASCADE',
       },
-
       count: {
         type: Sequelize.INTEGER,
       },
-
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

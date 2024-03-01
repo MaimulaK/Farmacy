@@ -3,7 +3,7 @@ const Layout = require('./Layout');
 const CartItem = require('./CartItem');
 
 function CartPage({ title, cart, user, cartItem }) {
-  console.log(cart);
+  console.log(cart,"----------------------------------------------");
   return (
     <Layout title={title} user={user}>
       <h2>Корзина</h2>
