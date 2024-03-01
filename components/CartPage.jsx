@@ -2,14 +2,15 @@ const React = require('react');
 const Layout = require('./Layout');
 const CartItem = require('./CartItem');
 
-function CartPage({ title, products }) {
+function CartPage({ title, cart, user, cartItem }) {
+  console.log(cart);
   return (
-    <Layout title={title}>
+    <Layout title={title} user={user}>
       <h2>Корзина</h2>
       <h4>Вы выбрали:</h4>
       <div className='cart-container'>
-        {products.map((product) => (
-          <CartItem product={product} />
+        {cart.CartItems.map((item) => (
+          <CartItem cartItem={cartItem} item={item} />
         ))}
       </div>
     </Layout>
