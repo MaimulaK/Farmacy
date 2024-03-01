@@ -10,7 +10,10 @@ function verifyRefreshToken(req, res, next) {
     const { user } = jwt.verify(refresh, 'R');
     // генерируем новую пару токенов
     const { accessToken, refreshToken } = generateTokens({
-      user: { id: user.id, name: user.name },
+      user: {
+        id: user.id,
+        name: user.name,
+      },
     });
     // дополняем объект ответа userом
     res.locals.user = user;
