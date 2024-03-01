@@ -8,14 +8,16 @@ function MainPage({ title, user, products }) {
   console.log(products);
   return (
     <Layout title={title} user={user}>
-      <div className='firstPageBaner'>
-        <p>Social Pharmacy</p>
+      <div>
+        <div className="firstPageBaner">
+          <p>Social Pharmacy</p>
+        </div>
       </div>
-      <div className='mainPage'>
+      <div className="mainPage">
         <h1>Добро пожаловать</h1>
         <FilterSort />
         <FilterCount />
-        <div className='container'>
+        <div className="container">
           <h1>Наши товары</h1>
           <ProductContainer products={products} />
         </div>

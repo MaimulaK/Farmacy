@@ -15,6 +15,14 @@ function NavBar({ user }) {
             <div>
               <a href="/api/auth/logout">Logout</a>
             </div>
+            <div>
+              <a className="cartIconHref" href="/cart">
+                <img
+                  className="cartIcon"
+                  src="https://cdn.icon-icons.com/icons2/1760/PNG/512/4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919.png"
+                />
+              </a>
+            </div>
           </>
         ) : (
           <>
@@ -26,9 +34,6 @@ function NavBar({ user }) {
             </div>
           </>
         )}
-        <div>
-          <a href="/cart">Cart</a>
-        </div>
       </div>
     </div>
   );

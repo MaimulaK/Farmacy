@@ -1,22 +1,50 @@
-body {
+* {
   margin: 0;
 }
 
 .navBar {
-  height: 60px;
+  height: 80px;
   background-color: rgb(141, 219, 186);
   border-radius: 0 0 15px 15px;
 }
 
 .divNavbar {
-  height: 60px;
+  height: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  align-content: center;
 }
 
 .divNavbar a {
+  padding: 27px;
+  font-size: 28px;
   text-decoration: none;
-  align-self: center;
+  color: rgb(5, 78, 27);
+}
+
+.divNavbar a:hover {
+  background-color: rgb(98, 214, 143);
+}
+
+.divNavbar .cartIcon {
+  width: 3rem;
+}
+
+.divNavbar .cartIconHref {
+  padding: 35px 20px 15px 15px;
+}
+
+.divNavbar a .cartIconHref:hover {
+  background-color: rgb(141, 219, 186);
+}
+
+.firstPageBaner {
+  /* background-color: rgb(141, 219, 186); */
+  height: 500px;
+  background-image: url('https://i.pinimg.com/736x/23/48/54/2348547d42cfe453abbb15a8a268fae1.jpg');
+  /* background-size: cover; */
+  background-position: center;
+   background-repeat: no-repeat;
 }
