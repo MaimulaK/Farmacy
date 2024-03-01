@@ -6,8 +6,7 @@ function CartItem({ item }) {
     <div className='cartProduct'>
       <h2>{item.Product.title}</h2>
       <img src={item.Product.img} />
-      <h3>{item.Product.price}</h3>
-      {/* <h3>{CartItem.count}</h3> */}
+      <h3>{item.Product.price} ₽</h3>
       <button className='btn-delete'>Удалить</button>
     </div>
   );

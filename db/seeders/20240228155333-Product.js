@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         title: 'Мотивациая Поднмин',
-        img: 'https://i.pinimg.com/736x/e0/51/82/e051825d66432344e8b3dacf9cfc3aef.jpg',
+        img: 'https://sun9-27.userapi.com/impg/XgqS_tjaUfVE0p68dEW805Wcf87H2oW9viWWDA/qqq6e7_4Sfo.jpg?size=597x597&quality=96&sign=edd4403b049d766da8858f78b506a8dc&type=album',
         description: 'МОТИВАЦИЮ НАДО ПОДНЯЯЯТЬЬ!!!',
         price: 599,
         count: 0,
@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         title: 'Против болеей в мышцах!!!',
-        img: 'https://stihi.ru/pics/2012/08/20/3392.jpg',
+        img: 'https://sun9-23.userapi.com/impg/qc1P0kpciSyazn3L9jedkIv2BLi8JdWMOaT4lw/bSmzRISy9jA.jpg?size=597x597&quality=96&sign=93c9eb027a6fa479390a058d403ad7ce&type=album',
         description: 'Он принял боль за тебя!',
         price: 599,
         count: 0,
@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         title: 'Тантум верде форте',
-        img: 'https://memepedia.ru/wp-content/uploads/2017/11/%D1%82%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D1%82%D0%B0%D0%BD%D1%82%D1%83%D0%BC-%D0%B2%D0%B5%D1%80%D0%B4%D0%B5-2.png',
+        img: 'https://sun9-48.userapi.com/impg/lIZCf-QzuYad2Ih6W61f7dG901jStsW7e17IIQ/OCqoySXSf50.jpg?size=597x597&quality=96&sign=90c9125a2759de03b5a1fc9961509430&type=album',
         description: 'Где лучшие таблетки?У нас в аптеке!!',
         price: 599,
         count: 0,
