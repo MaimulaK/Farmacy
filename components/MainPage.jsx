@@ -9,23 +9,32 @@ function MainPage({ title, user, products }) {
   return (
     <Layout title={title} user={user}>
       <div>
-        <div className="firstPageBaner">
+        <div className='firstPageBaner'>
           <p>Social Pharmacy</p>
-          <p className='description'>Добро пожаловать в нашу социальную аптеку.</p>
+          <p className='description'>
+            Добро пожаловать в нашу социальную аптеку.
+          </p>
           <a href='#catalog'>Перейти к товарам</a>
         </div>
       </div>
-      <div id = 'catalog'className="mainPage">
-        <h1>Добро пожаловать</h1>
-        <form className='form-date'>
+
+      <div id='catalog' className='mainPage'>
+        <div> <form className='form-date'>
           <input type='date' className='form-data__input' />
           <button className='form-date__button'>Бесплатный продукт</button>
         </form>
         <div className='randomProduct' style={{ display: 'none' }} />
-        <FilterSort />
-        <FilterCount />
-        <div className="container">
-          <h1>Наши товары</h1>
+</div>
+        <div className='filtBtn'>
+          <div className='btnfiltDiv'>
+            <p>Сортировка</p>
+            <FilterSort />
+            <FilterCount />
+          </div>
+        </div>
+        <h1>Наши товары</h1>
+        <div className='container'>
+
           <ProductContainer products={products} />
         </div>
       </div>

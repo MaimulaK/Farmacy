@@ -3,7 +3,7 @@ const React = require('react');
 function FilterSort() {
   return (
     <div className='formSort'>
-      <h2>Цена:</h2>
+      <p>Цена:</p>
       <button className='sortUp'>↑</button>
       <button className='sortDown'>↓</button>
     </div>

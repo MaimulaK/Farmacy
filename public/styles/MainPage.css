@@ -1,7 +1,7 @@
 .firstPageBaner {
   color: white;
   height: 850px;
-  font-family: 'Comfortaa', sans-serif;
+
   background-image: url('https://sun9-25.userapi.com/impg/tVwhQqJot0v1lf6jbCAE6uSZ1LDxhGwTlYQ0Zg/5La7wNPSzCg.jpg?size=2560x1716&quality=96&sign=c116e7289cdefe6d555726bf681d8610&type=album');
   background-position: center;
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 .description {
@@ -17,12 +18,110 @@
 }
 
 .firstPageBaner a {
-    margin: 2%;
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
+  margin: 2%;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
 }
 
 .firstPageBaner a:hover {
-    text-decoration: underline;
+  text-decoration: underline; 
+}
+
+.filtBtn {
+  border: 2px solid rgb(150, 150, 150);
+}
+
+.btnfiltDiv {
+  margin: auto;
+  font-size: 20px;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  color: gray;
+}
+
+.btnfiltDiv p {
+  color: black;
+  padding: 1rem;
+}
+.formSort,
+.filterCount {
+  margin: auto 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sortUp,
+.sortDown,
+.filter {
+  font-size: 20px;
+  padding: 4px;
+  background: rgb(255, 255, 255);
+  border: 0cap;
+}
+
+.productCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.productItem {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0.1, 0.4);
+  border-radius: 20px;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.productItem:hover {
+  box-shadow: 0px 8px 16px rgb(89, 117, 97);
+  transform: scale(1.03);
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  margin: 0.3rem;
+}
+
+.productItem img {
+  height: 300px;
+}
+.productItem .count {
+  font-size: 1rem;
+  margin: 0.3rem;
+}
+
+.productItem .title {
+  text-decoration: none;
+  color: black;
+  margin: 0.3rem;
+}
+
+.productItem .title:hover {
+  color: rgb(90, 155, 5);
+}
+
+.productItem .cardAdd {
+  border-radius: 0 0 20px 20px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rgb(5, 78, 27);
+  background-color: #a8b692;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.productItem button:hover {
+  background-color: #c2ccb4;
 }

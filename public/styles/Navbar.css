@@ -1,6 +1,12 @@
 * {
   margin: 0;
+  font-family: 'Comfortaa', sans-serif;
 }
+
+body{
+  background-color: #fafafa;
+}
+
 
 .navBar {
   height: 80px;
