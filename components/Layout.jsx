@@ -17,6 +17,7 @@ module.exports = function Layout({ title, children, user }) {
           href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap'
           rel='stylesheet'
         />
+        <script defer src='/scripts/mainScript.js' />
         <script defer src='/scripts/auth.js' />
         <script defer src='/scripts/product.js' />
         <script defer src='/scripts/personal.js' />
