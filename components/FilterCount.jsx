@@ -3,7 +3,7 @@ const React = require('react');
 function FilterCount() {
   return (
     <div className='filterCount'>
-      <h2>Наличие:</h2>
+      <p>Наличие:</p>
       <button className='filter'>↑</button>
     </div>
   );

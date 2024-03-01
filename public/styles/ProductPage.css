@@ -1,0 +1,60 @@
+.productCardDescription {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardProductPage {
+  border-radius: 1rem;
+  background-color: rgb(253, 252, 249);
+  border: 2px solid rgb(209, 209, 209);
+  width: 90rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+box-shadow: 1px 2px 12px rgba(0, 0.1, 0.1, 0.4);
+}
+
+.cardProductPage img {
+  width: 30rem;
+}
+
+.cardProductPage .titlePage{
+    margin: 16px;
+    font-size: 29px;
+}
+
+.filling{
+    display: flex;
+    margin: 1rem;
+}
+
+.filling .price{
+    font-size: 36px;
+}
+
+.product-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 30rem;
+    margin: 45px;
+}
+
+.product-left .description{
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.back{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.back:hover{
+    text-decoration: underline; 
+}
