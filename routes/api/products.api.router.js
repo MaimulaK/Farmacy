@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const ProductContainer = require('../../components/ProductContainer');
-const { Product } = require('../../db/models');
+const { Product, Meme } = require('../../db/models');
 const ProductCard = require('../../components/ProductCard');
 
 router.get('/sortUp', async (req, res) => {
@@ -54,7 +54,7 @@ router.get('/filterCount', async (req, res) => {
 router.get('/getOne', async (req, res) => {
   try {
     const randomNumber = Math.floor(Math.random() * 4) + 1;
-    const product = await Product.findOne({ where: { id: randomNumber } });
+    const product = await Meme.findOne({ where: { id: randomNumber } });
     console.log(product, 11111111);
     const html = res.renderComponent(
       ProductCard,
