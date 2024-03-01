@@ -9,7 +9,7 @@ async function getUser(req, res, next) {
       // какой пользователь
       where: { id: res.locals.user.id },
       // какие аттрибуты нужны
-      attributes: ['name', 'id'],
+      attributes: ['id', 'name', 'email'],
     });
 
     res.locals.user = user;

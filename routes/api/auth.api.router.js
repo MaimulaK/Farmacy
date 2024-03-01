@@ -24,7 +24,7 @@ router.post('/registration', async (req, res) => {
 
     user = await User.findOne({
       where: { id: userInDb.id },
-      attributes: ['name', 'id'],
+      attributes: ['id', 'name', 'email'],
     });
     if (user) {
       res.locals.user = user;
@@ -46,7 +46,7 @@ router.post('/authorization', async (req, res) => {
     const { email, password } = req.body;
     user = await User.findOne({
       where: { email },
-      attributes: ['password', 'name', 'id'],
+      attributes: ['password', 'email', 'name'],
     });
     if (!user) {
       res.json({ message: 'Такого пользователя нет или пароль неверный' });

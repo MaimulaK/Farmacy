@@ -11,7 +11,7 @@ function NavBar({ user }) {
           {user ? (
             <>
               <li>
-                <a>{user.name}</a>
+                <a href='/personal'>Личный кабинет</a>
               </li>
               <li>
                 <a href='/api/auth/logout'>Logout</a>
