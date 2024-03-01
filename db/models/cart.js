@@ -9,6 +9,12 @@ module.exports = (sequelize, DataTypes) => {
   }
   Cart.init(
     {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: DataTypes.INTEGER,
+      },
       userId: {
         allowNull: false,
         type: DataTypes.INTEGER,
