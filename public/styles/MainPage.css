@@ -125,3 +125,21 @@
 .productItem button:hover {
   background-color: #c2ccb4;
 }
+
+
+.form-date input{
+  width: 50%;
+  height: 5rem;
+  border: 2px solid rgb(150, 150, 150);
+  font-size: 22px;
+  margin: 3px;
+  border-radius: 20px;
+}
+
+
+.form-date__button{
+  border-radius: 20px;
+  height: 3rem;
+  background-color: rgb(5, 78, 27);
+  color: white;
+}
