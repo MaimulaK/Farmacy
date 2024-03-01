@@ -8,11 +8,18 @@ function MainPage({ title, user, products }) {
   console.log(products);
   return (
     <Layout title={title} user={user}>
-      <div className='mainPage'>
+      <div>
+        <div className="firstPageBaner">
+          <p>Social Pharmacy</p>
+          <p className='description'>Добро пожаловать в нашу социальную аптеку.</p>
+          <a href='#catalog'>Перейти к товарам</a>
+        </div>
+      </div>
+      <div id = 'catalog'className="mainPage">
         <h1>Добро пожаловать</h1>
         <FilterSort />
         <FilterCount />
-        <div className='container'>
+        <div className="container">
           <h1>Наши товары</h1>
           <ProductContainer products={products} />
         </div>

@@ -1,0 +1,28 @@
+.firstPageBaner {
+  color: white;
+  height: 850px;
+  font-family: 'Comfortaa', sans-serif;
+  background-image: url('https://sun9-25.userapi.com/impg/tVwhQqJot0v1lf6jbCAE6uSZ1LDxhGwTlYQ0Zg/5La7wNPSzCg.jpg?size=2560x1716&quality=96&sign=c116e7289cdefe6d555726bf681d8610&type=album');
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 40px;
+}
+
+.firstPageBaner a {
+    margin: 2%;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.firstPageBaner a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+.navBar {
+  height: 80px;
+  background-color: #A8B692;
+
+}
+
+.divNavbar {
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.divNavbar a {
+  padding: 27px;
+  font-size: 28px;
+  text-decoration: none;
+  color: rgb(5, 78, 27);
+}
+
+.divNavbar a:hover {
+  border-radius: 20px;
+  background-color: #C2CCB4;
+}
+
+.divNavbar .cartIcon {
+  width: 3rem;
+}
+
+.divNavbar .cartIconHref {
+  padding: 35px 20px 15px 15px;
+}
+
+.divNavbar a .cartIconHref:hover {
+  background-color: rgb(141, 219, 186);
+}
+
