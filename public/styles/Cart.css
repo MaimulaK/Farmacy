@@ -1,0 +1,44 @@
+.cartPageIm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartPageIm h2 {
+  margin: 10px;
+}
+
+.cartPageIm h4 {
+  font-size: 25px;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgb(231, 231, 231);
+}
+
+.btn-delete {
+  border-radius: 20px;
+  height: 3rem;
+  background-color: rgb(5, 78, 27);
+  color: white;
+  width: 300px;
+}
+
+.btn-delete:hover {
+  background-color: rgb(166, 218, 181);
+}
+
+.cartProduct img{
+    width: 50%;
+}

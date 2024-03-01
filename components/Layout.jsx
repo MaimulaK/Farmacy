@@ -14,7 +14,9 @@ module.exports = function Layout({ title, children, user }) {
         <link rel='stylesheet' href='/styles/MainPage.css' />
         <link rel='stylesheet' href='/styles/ProductPage.css' />
         <link rel='stylesheet' href='/styles/AuthorizationPage.css' />
+        <link rel='stylesheet' href='/styles/LK.css' />
         <link rel='stylesheet' href='/styles/RegistrationPage.css' />
+        <link rel='stylesheet' href='/styles/Cart.css' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
 
