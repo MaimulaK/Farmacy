@@ -3,7 +3,7 @@ const Personal = require('../../components/Personal');
 
 router.get('/', async (req, res) => {
   const { user } = res.locals;
-  console.log(user);
+  // console.log(user);
   const document = res.renderComponent(Personal, {
     title: 'Личный кабинет',
     user,
