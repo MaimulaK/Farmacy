@@ -4,8 +4,8 @@
 
 .navBar {
   height: 80px;
-  background-color: rgb(141, 219, 186);
-  border-radius: 0 0 15px 15px;
+  background-color: #A8B692;
+
 }
 
 .divNavbar {
@@ -25,7 +25,8 @@
 }
 
 .divNavbar a:hover {
-  background-color: rgb(98, 214, 143);
+  border-radius: 20px;
+  background-color: #C2CCB4;
 }
 
 .divNavbar .cartIcon {
@@ -40,11 +41,3 @@
   background-color: rgb(141, 219, 186);
 }
 
-.firstPageBaner {
-  /* background-color: rgb(141, 219, 186); */
-  height: 500px;
-  background-image: url('https://i.pinimg.com/736x/23/48/54/2348547d42cfe453abbb15a8a268fae1.jpg');
-  /* background-size: cover; */
-  background-position: center;
-   background-repeat: no-repeat;
-}

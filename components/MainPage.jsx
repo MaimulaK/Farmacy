@@ -11,9 +11,11 @@ function MainPage({ title, user, products }) {
       <div>
         <div className="firstPageBaner">
           <p>Social Pharmacy</p>
+          <p className='description'>Добро пожаловать в нашу социальную аптеку.</p>
+          <a href='#catalog'>Перейти к товарам</a>
         </div>
       </div>
-      <div className="mainPage">
+      <div id = 'catalog'className="mainPage">
         <h1>Добро пожаловать</h1>
         <FilterSort />
         <FilterCount />
