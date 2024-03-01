@@ -7,7 +7,11 @@ function CartPage({ title, products }) {
     <Layout title={title}>
       <h2>Корзина</h2>
       <h4>Вы выбрали:</h4>
-      <div className='cart-container' />
+      <div className='cart-container'>
+        {products.map((product) => (
+          <CartItem product={product} />
+        ))}
+      </div>
     </Layout>
   );
 }
