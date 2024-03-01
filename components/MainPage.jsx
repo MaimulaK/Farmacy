@@ -17,6 +17,11 @@ function MainPage({ title, user, products }) {
       </div>
       <div id = 'catalog'className="mainPage">
         <h1>Добро пожаловать</h1>
+        <form className='form-date'>
+          <input type='date' className='form-data__input' />
+          <button className='form-date__button'>Бесплатный продукт</button>
+        </form>
+        <div className='randomProduct' style={{ display: 'none' }} />
         <FilterSort />
         <FilterCount />
         <div className="container">
