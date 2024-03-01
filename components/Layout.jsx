@@ -4,13 +4,15 @@ const NavBar = require('./NavBar');
 
 module.exports = function Layout({ title, children, user }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
         <title>{title}</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <script defer src='/scripts/auth.js' />
-        <script defer src='/scripts/product.js' />
-        <script defer src='/scripts/personal.js' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../public/styles/normalize.css" />
+        <link rel="stylesheet" href="../public/styles/Navbar.css" />
+        <script defer src="/scripts/auth.js" />
+        <script defer src="/scripts/product.js" />
+        <script defer src="/scripts/personal.js" />
       </head>
       <body>
         <NavBar user={user} />

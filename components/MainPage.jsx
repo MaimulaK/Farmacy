@@ -8,6 +8,9 @@ function MainPage({ title, user, products }) {
   console.log(products);
   return (
     <Layout title={title} user={user}>
+      <div className='firstPageBaner'>
+        <p>Social Pharmacy</p>
+      </div>
       <div className='mainPage'>
         <h1>Добро пожаловать</h1>
         <FilterSort />
